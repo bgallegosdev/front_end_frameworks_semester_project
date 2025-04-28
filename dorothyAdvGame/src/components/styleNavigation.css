@@ -1,0 +1,14 @@
+/* Navigation.jsx Style */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    background-color: #960000;
+    color: #ffffff;
+    box-shadow: 1px 1px 4px #000000;
+}
+
+h1{
+    font-size: 2em;
+}
