@@ -1,16 +1,12 @@
 import './styleNavigation.css'
 
-function Navigation(){
-    // Lives indicated by selection
-    let lionLives = 4;
-    let tinLives = 3;
-    let scareLices = 2;
+function Navigation({lives}){
 
     return(
         <>
             <div className='w3-container navBar'>
                 <h1>Saving Dorothy</h1>
-                <p>Lives: {lionLives}</p>
+                <p>Lives: {lives}</p>
             </div>
         </>
     )
