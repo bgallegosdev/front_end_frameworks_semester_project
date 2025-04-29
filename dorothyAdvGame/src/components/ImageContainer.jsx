@@ -1,10 +1,10 @@
 import './styleImageContainer.css';
 
-function ImageContainer(){
+function ImageContainer({sceneImage}){
     return(
         <>
             <div className='imgContainer'>
-                <p>testing</p>
+                <img className='w3-image w3-round-xlarge' src={sceneImage.src} alt={sceneImage.alt} />
             </div>
         </>
     )

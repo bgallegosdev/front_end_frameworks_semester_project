@@ -1,0 +1,17 @@
+/* Text Container Styles */
+.textContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #F6D372;
+    box-shadow: 1px 1px 5px #000000;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+}

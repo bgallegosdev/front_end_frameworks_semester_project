@@ -1,0 +1,23 @@
+/* Choice Buttons Styling */
+.choiceButtonContainer{
+    width: 50%;
+}
+
+.choiceButtons{
+    margin: 5%;
+
+    background-color: #960000;
+    color: #ffffff;
+    font-size: 2.5em;
+
+}
+
+.choiceButtons:hover{
+    background-color: #c10000;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.choiceButtons:active{
+    background-color: #e6e600;
+    color: #000000;
+}
