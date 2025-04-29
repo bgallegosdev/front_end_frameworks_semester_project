@@ -10,8 +10,7 @@ function Navigation(){
         <>
             <div className='w3-container navBar'>
                 <h1>Saving Dorothy</h1>
-                <p>Health Bar: {lionLives}</p>
-                <button className='w3-button w3-white w3-text-black w3-round-large'>Reset Game</button>
+                <p>Lives: {lionLives}</p>
             </div>
         </>
     )

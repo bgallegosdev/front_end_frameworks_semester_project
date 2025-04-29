@@ -21,3 +21,21 @@
     background-color: #e6e600;
     color: #000000;
 }
+
+.resetButton{
+    margin: 2%;
+    background-color: #c4c4c4;
+    color: #000000;
+    font-size: 1.4em;
+}
+
+.resetButton:hover{
+    background-color: #343434;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.resetButton:active{
+    background-color: #e6e600;
+    color: #000000;
+}

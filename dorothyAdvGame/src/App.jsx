@@ -9,6 +9,12 @@ function App() {
   const [path, setPath] = useState('sceneZero');
 
   const paths = {
+    reset: {
+      choices: [
+        {leftText: "Reset Game", next: "sceneZero"}
+      ]
+    },
+
     sceneZero: {
       Img: {
         src: "/assets/scene_zero.jpg",
@@ -66,13 +72,17 @@ function App() {
   return (
     <>
       <div>
-        <Navigation />
+        <div>
+          <Navigation />
+          <ChoiceButtons className='resetButton' choiceText={paths.reset.choices[0].leftText} 
+            onClick={() => handlePathClick(paths.reset.choices[0])}/>
+        </div>
         <ImageContainer sceneImage={paths[path].Img} />
         <TextContainer text={paths[path].Text}/>
         <div className='choicesContainer'>
-          <ChoiceButtons choiceText={paths[path].choices[0].leftText} 
+          <ChoiceButtons className='choiceButtons' choiceText={paths[path].choices[0].leftText} 
             onClick={() => handlePathClick(paths[path].choices[0])}/>
-          <ChoiceButtons choiceText={paths[path].choices[1].rightText}
+          <ChoiceButtons className='choiceButtons' choiceText={paths[path].choices[1].rightText}
             onClick={() => handlePathClick(paths[path].choices[1])}/>
         </div>
       </div>
