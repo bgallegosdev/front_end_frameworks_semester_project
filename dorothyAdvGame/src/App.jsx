@@ -166,7 +166,10 @@ function App() {
     setPath(choice.next);
   }
 
-  //using CoPilot to help me with this logic
+  //Logic Assistance: Used CoPilot to help me with this logic
+  //Explained in my own words: using rollCheck function to determine if the roll was above 5 and was a success. 
+  //Explained in my own words: If rollCheck is passed as true, above 5, then the previous state stored in health is left alone and is a success
+  //Explained in my own words: If rollCheck is passed as false, fails below a 5, then previous state is decremented to lose a life
   const rollCheck = (roll) => {
     setHealth((prevHealth) => {
       if (!roll) {
@@ -177,7 +180,7 @@ function App() {
     });
   };
 
-  //Function for random roll
+  //Function for random roll for encounters
   const randomRoll = () => {
     let ranRoll = Math.floor(Math.random() * 10);
     console.log("Random Roll: " + ranRoll);
@@ -238,6 +241,9 @@ function App() {
           {/* Roll Button - Displays When A Roll is Needed */}
           <ChoiceButtons changeStyle={paths[path].displayRollChange} className='choiceButtons' choiceText={paths[path].choices[2].rollText}
             onClick={() => randomRoll()}/>
+
+          {/*Logic Assitance: I needed help with specifically the logic of onClick function, used Copilot to help me trouble shoot onClick code*/}
+          {/*Explained in my own words: The code above on the onClick handler for the ChoiceButtons of left and right calls a function handlePathClick by passing the paths object's current path and the choices so the handler can set the next path on click */}
         </div>
       </div>
     </>
