@@ -1,10 +1,10 @@
 import "./styleChoiceButtons.css"
 
-function ChoiceButtons({choiceText, onClick, className}) {
+function ChoiceButtons({choiceText, onClick, className, changeStyle}) {
     return(
         <>
             <div className="choiceButtonContainer">
-                <button className={`w3-round-xlarge ${className}`} onClick={onClick}>{choiceText}</button>
+                <button style={{display: changeStyle}} className={`w3-round-xlarge ${className}`} onClick={onClick}>{choiceText}</button>
             </div>
         </>
     )
