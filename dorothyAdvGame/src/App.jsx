@@ -52,7 +52,7 @@ function App() {
         src: "/assets/pass_icon.svg",
         alt: "Green Check mark"
       },
-      Text: "You rolled a passing check! The Trees roots break beneath your strength. You live! You shout, 'I have no times for games you wicked Tree! I have a friend to save!'",
+      Text: "You rolled a passing check! The Trees roots break beneath your strength. You live! You shout, 'I have no time for games you wicked Tree! I have a friend to save!'",
       choices: [
         {leftText: null},
         {rightText: "Continue on your path!", next: 'sceneFourA'},
@@ -71,7 +71,7 @@ function App() {
       Text: "You rolled a failed check! The Trees roots grow tight on your ankles and you trip down the hill. You hear the Tree laugh horridyly as you fall... You lost a life! Get to zero and you lose...",
       choices: [
         {leftText: null},
-        {rightText: "Continue on your path...", next: 'sceneFourB'},
+        {rightText: "Continue on your path...", next: 'sceneFourA'},
         {rollText: null}
       ],
       displayLeftChange: 'none',
@@ -136,6 +136,38 @@ function App() {
       choices: [
         {leftText: null},
         {rightText: "Continue on your path...", next: 'sceneFourA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    passRollPoppy: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You fight through the Wicked Witch's laughs, you burst through the field no problem! You hear the witch scream with rage. You survive!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneFiveD'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollPoppy: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! The magic and storm are too strong for you...You suddenly fall into the field into a fast sleep. You lose a life! Get to zero and you fail.",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneSixA'},
         {rollText: null}
       ],
       displayLeftChange: 'none',
