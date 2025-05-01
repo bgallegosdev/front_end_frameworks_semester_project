@@ -14,3 +14,9 @@ Yorkie Dog Photo: Photo by Chen Te: https://www.pexels.com/photo/yorkshire-terri
 Field of Poppy Flowers: Photo by Elina Sazonova: https://www.pexels.com/photo/red-poppy-flower-field-1876620/
 Bridge to Castle: Photo by Julien Riedel: https://www.pexels.com/photo/stone-bridge-leading-to-the-medieval-eltz-castle-20027103/
 Storm Clouds: Photo by Ayu Shakya: https://www.pexels.com/photo/lightning-on-the-sky-1294229/
+Underground Tunnel Image: Photo by Oscar Sánchez: https://www.pexels.com/photo/dark-tunnel-underground-18928150/
+Troll Image: Photo by William Jacobs: https://www.pexels.com/photo/wooden-troll-sculpture-amidst-lush-forest-28498780/
+Treasure Chest: Photo by David Bartus: https://www.pexels.com/photo/light-inside-chest-box-366791/
+Moon Image: Photo by Tom Fisk: https://www.pexels.com/photo/low-angle-photography-of-full-moon-under-silhouette-of-tall-trees-1716158/
+Red Moon: Photo by Pedro Figueras: https://www.pexels.com/photo/red-moon-during-night-time-681467/
+Dark Cave Image: Photo by Peter de Vink: https://www.pexels.com/photo/lighted-cave-849385/

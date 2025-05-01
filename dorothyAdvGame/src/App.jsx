@@ -175,6 +175,70 @@ function App() {
       displayRollChange: 'none'
     },
 
+    passRollTroll: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You successfully overpower the cave troll! You push the troll over the bridge and into the river! You survive!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneSevenA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollTroll: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! You manage to outsmart the troll but the damage is done! You lose a life! Get to zero and you fail.",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneSevenA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    passRollTrollSleep: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You manage to sneak past the sleeping troll as he snores. Success! You survive!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneSevenA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollTrollSleep: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! You start walking past the troll and accidentally knock over the trolls wooden weapon on his head! You lose a life! Get to zero and you fail!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneSixE'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
     //Starting Paths
     sceneZero: {
       Img: {
@@ -410,6 +474,118 @@ function App() {
         {leftText: null, next: "passRollPoppy"},
         {rightText: null, next: "failRollPoppy"},
         {rollText: "You  must roll to save yourself from the Sleep spell!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneFiveD: {
+      Img: {
+        src: "/assets/scene_five_d.jpg",
+        alt: "Underground Tunnel"
+      },
+      Text: "You choose to go into the secret tunnel under the river. You follow the small path that bypasses the bridge troll!",
+      choices: [
+        {leftText: null},
+        {rightText: 'Continue into the secret tunnel!', next: "sceneSixB"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSixA: {
+      Img: {
+        src: "/assets/scene_six_a.jpg",
+        alt: "Troll Figure"
+      },
+      Text: "You arrive at the front of the Bridge that connects to the castle over the river. And suddenly you see a very large Bridge Toll that will surely crush you...",
+      choices: [
+        {leftText: 'No fear! Confront the cave troll!', next: "sceneSixC"},
+        {rightText: 'You decide that smarts is the way to go. You wait until midnight for the troll to fall asleep.', next: "sceneSixD"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSixB: {
+      Img: {
+        src: "/assets/scene_six_b.jpg",
+        alt: "Treasure Chest"
+      },
+      Text: "You walk further into the tunnel and you find a glowing chest! It is tattered and worn but the inside is glowing a gold light. As you approach, the tunnel shakes. Or was it the chest?",
+      choices: [
+        {leftText: 'Open the chest!', next: "sceneSixF"},
+        {rightText: 'You don`t trust it…move on.', next: "sceneSevenA"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSixC: {
+      Img: {
+        src: "/assets/scene_six_c.jpg",
+        alt: "Battle Armor and Sword"
+      },
+      Text: "You approach the troll, needing to fight. The troll grunts and seems to laugh at you.",
+      choices: [
+        {leftText: null, next: "passRollTroll"},
+        {rightText: null, next: "failRollTroll"},
+        {rollText: "Attack the troll! You must roll to beat this troll and pass the bridge!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneSixD: {
+      Img: {
+        src: "/assets/scene_six_d.jpg",
+        alt: "Moon in Forest"
+      },
+      Text: "You wait for the troll to sleep close to midnight. It works. But for how long? It appears it is resting…",
+      choices: [
+        {leftText: null, next: "passRollTrollSleep"},
+        {rightText: null, next: "failRollTrollSleep"},
+        {rollText: "You need to roll for passing the troll while sleeping. Don't wake him!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneSixE: {
+      Img: {
+        src: "/assets/scene_six_e.jpg",
+        alt: "Red Moon"
+      },
+      Text: "You woke up the troll! The troll scoffs and picks up his wooden weapon. You must now confront the troll!",
+      choices: [
+        {leftText: null, next: "passRollTroll"},
+        {rightText: null, next: "failRollTroll"},
+        {rollText: "Attack the troll! You must roll to beat this troll and pass the bridge!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneSixF: {
+      Img: {
+        src: "/assets/scene_six_f.jpg",
+        alt: "Sharp Cave"
+      },
+      Text: "You reach down and lift the unbuckled lock of the chest… You see hundreds of little sets of teeth and a tongue..IT IS A MIMIC! You were too greedy…",
+      choices: [
+        {leftText: null, next: "passRollMimic"},
+        {rightText: null, next: "failRollMimic"},
+        {rollText: "You must run from the mimic! Roll to run away from the mimic as fast as you can!"}
       ],
       displayLeftChange: 'none',
       displayRightChange: 'none',
