@@ -239,6 +239,70 @@ function App() {
       displayRollChange: 'none'
     },
 
+    passRollMimic: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You run as fast as you can. The mimic slowly attempts to lunge and you but are faster! Success! You survive!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneSevenA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollMimic: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! You run as fast as you can. But as soon as you exit the tunnel, the mimic is able to bite at your ankle. You lose a life. Get to zero and you fail!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneSevenA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    passRollMonkey: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You best the Flying Monkey guard as he tries to lunge at you with his spear. You dodge and you are able to knock him out. Success! You survive!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneNineA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollMonkey: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! The Flying Monkey guard is too fast! You barely manage to escape and trap him in the room, but the damage is done. You lose a life. Get to zero and you fail!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneNineA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
     //Starting Paths
     sceneZero: {
       Img: {
@@ -590,6 +654,214 @@ function App() {
       displayLeftChange: 'none',
       displayRightChange: 'none',
       displayRollChange: ''
+    },
+
+    sceneSevenA: {
+      Img: {
+        src: "/assets/scene_seven_a.jpg",
+        alt: "Dark Castle"
+      },
+      Text: "You have made it. Through trial and error, you have arrived at the Wicked Witch`s castle. ",
+      choices: [
+        {leftText: null},
+        {rightText: 'Approach the doors.', next: "sceneSevenB"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSevenB: {
+      Img: {
+        src: "/assets/scene_seven_b.jpg",
+        alt: "Castle Doors"
+      },
+      Text: "The doors are large and dark, with dark letters of a language you do not understand…",
+      choices: [
+        {leftText: 'Burst through the doors. You need to make a statement.', next: "sceneSevenC"},
+        {rightText: 'The doors have large round metal door knocker rings on them. You clang the rings against the door three times.', next: "sceneSevenD"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSevenC: {
+      Img: {
+        src: "/assets/scene_seven_cd.jpg",
+        alt: "Castle Steps"
+      },
+      Text: "You are brave. You burst through the doors with fists above your head. And…no one is there",
+      choices: [
+        {leftText: null},
+        {rightText: 'Proceed into the Great Hall.', next: "sceneSevenE"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSevenD: {
+      Img: {
+        src: "/assets/scene_seven_cd.jpg",
+        alt: "Castle Steps"
+      },
+      Text: "You are certain the doors are locked. You keep clanging the metal rings until the doors swing open by the force. And…no one is there",
+      choices: [
+        {leftText: null},
+        {rightText: 'Proceed into the Great Hall.', next: "sceneSevenE"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneSevenE: {
+      Img: {
+        src: "/assets/scene_seven_e.jpg",
+        alt: "Castle Stairs"
+      },
+      Text: "Strange… the hall is clear. No chatter, no marching. Empty and full of silence.",
+      choices: [
+        {leftText: 'You see a staircase going up. You take it.', next: "sceneEightA"},
+        {rightText: 'You see a staircase going down. You take it.', next: "sceneEightB"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneEightA: {
+      Img: {
+        src: "/assets/scene_eight_a.jpg",
+        alt: "Castle Stairs"
+      },
+      Text: "As you travel up the stairs you see normal portaits of a family. Trinkets and artwork that would seem normal if not for the dark hallways and ominous air...",
+      choices: [
+        {leftText: 'Keep going up.', next: "sceneEightC"},
+        {rightText: 'You`ve changed your mind. You want to try downstairs first.', next: "sceneEightG"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneEightB: {
+      Img: {
+        src: "/assets/scene_eight_b.jpg",
+        alt: "Dungeon"
+      },
+      Text: "You begin to descend down beyond the castle floors into what seems to be a dungeon.",
+      choices: [
+        {leftText: null},
+        {rightText: 'Keep going down.', next: "sceneEightG"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneEightC: {
+      Img: {
+        src: "/assets/scene_eight_c.jpg",
+        alt: "Two Doors"
+      },
+      Text: "As you climb to the landing of the tower, you see two doors that look promising.",
+      choices: [
+        {leftText: 'Open the door on the left.', next: "sceneEightD"},
+        {rightText: 'Open the door on the right.', next: "sceneEightE"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneEightD: {
+      Img: {
+        src: "/assets/scene_eight_d.jpg",
+        alt: "Chains"
+      },
+      Text: "As you open the door on the left, you hear the faint cries of someone. It's a guard?!? The guard is chained up. He says, 'I turned against her. She is truly wicked…Dorothy doesn`t deserve this.'",
+      choices: [
+        {leftText: 'You decide to save the guard. You unshackle his chains.', next: "sceneEightF"},
+        {rightText: 'This guard can`t be trusted. You leave him and go through the other door.', next: "sceneEightE"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneEightE: {
+      Img: {
+        src: "/assets/scene_eight_e.jpg",
+        alt: "Spear"
+      },
+      Text: "You open the right door… IT IS A TRAP! There is a Flying Monkey soldier with a spear that turns to you and snarls.",
+      choices: [
+        {leftText: null, next: "passRollMonkey"},
+        {rightText: null, next: "failRollMonkey"},
+        {rollText: "You need to defeat this guard to move on!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneEightF: {
+      Img: {
+        src: "/assets/scene_eight_f.jpg",
+        alt: "Broken Chains"
+      },
+      Text: "You released the shackled Guard. Guard: 'I cannot truly repay you for your kindness. I will help you stop her by guiding you to her'",
+      choices: [
+        {leftText: null},
+        {rightText: 'Follow the saved guard.', next: "sceneNineA"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneEightG: {
+      Img: {
+        src: "/assets/scene_eight_g.jpg",
+        alt: "Crystal Ball"
+      },
+      Text: "You end up in the dungeon jail cells. But again, you see no one. Not a single soldier or guard. The only thing in the room is a dark glass ball.",
+      choices: [
+        {leftText: 'You decide this path is not correct. Turn back upstairs.', next: "sceneEightC"},
+        {rightText: 'The glass ball is interesting. You go near it and pick it up.', next: "sceneNineABall"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneNineA: {
+      Img: {
+        src: "/assets/scene_eight_f.jpg",
+        alt: "Broken Chains"
+      },
+      Text: "You arrive at the top of the castle. This is where you hear them all. The flying guards are in the air. The hum of the chants. She is here.",
+      choices: [
+        {leftText: null},
+        {rightText: 'Confront the Wicked Witch.', next: "sceneNineB"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
     },
   }
 

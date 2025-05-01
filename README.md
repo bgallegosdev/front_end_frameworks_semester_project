@@ -20,3 +20,14 @@ Treasure Chest: Photo by David Bartus: https://www.pexels.com/photo/light-inside
 Moon Image: Photo by Tom Fisk: https://www.pexels.com/photo/low-angle-photography-of-full-moon-under-silhouette-of-tall-trees-1716158/
 Red Moon: Photo by Pedro Figueras: https://www.pexels.com/photo/red-moon-during-night-time-681467/
 Dark Cave Image: Photo by Peter de Vink: https://www.pexels.com/photo/lighted-cave-849385/
+Castle Courtyard: Photo by Fez Brook: https://www.pexels.com/photo/a-grayscale-of-a-stairs-in-a-castle-4452699/
+Dark Castle: Photo by Andreas Ebner: https://www.pexels.com/photo/castle-and-mountains-at-dawn-14694157/
+Castle Doors: Photo by Ammar Hameed: https://www.pexels.com/photo/ancient-derawar-fort-wooden-door-in-punjab-pakistan-31398648/
+Castle Stairs: Photo by Sonny Vermeer: https://www.pexels.com/photo/old-abandoned-monastery-somewhere-in-the-netherlands-20283201/
+Castle Stairs Black and White: Photo by C1 Superstar: https://www.pexels.com/photo/black-and-white-photo-of-a-staircase-inside-an-old-castle-20807756/
+Dungeon: Photo by Tanuj Matta: https://www.pexels.com/photo/hallway-inside-a-dungeon-13778249/
+Two Doors: Photo by konat umut budak: https://www.pexels.com/photo/decaying-wooden-doors-18833533/
+Chains: Photo by Bruno Scramgnon: https://www.pexels.com/photo/selective-focus-photography-of-brown-chains-596136/
+Spear: Photo by Alexander Mass: https://www.pexels.com/photo/halberd-in-grass-20101689/
+Broken Chains: Photo by Claudia Solari: https://www.pexels.com/photo/rusted-chain-hanging-against-a-weathered-wall-13157007/
+Crystal Ball: Photo by Ekaterina Belinskaya: https://www.pexels.com/photo/person-holding-clear-glass-ball-4922077/
