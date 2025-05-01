@@ -171,11 +171,11 @@ function App() {
   //Explained in my own words: If rollCheck is passed as true, above 5, then the previous state stored in health is left alone and is a success
   //Explained in my own words: If rollCheck is passed as false, fails below a 5, then previous state is decremented to lose a life
   const rollCheck = (roll) => {
-    setHealth((prevHealth) => {
+    setHealth((prevSavedHealth) => {
       if (!roll) {
-        return prevHealth - 1;
+        return prevSavedHealth - 1;
       }else{
-        return prevHealth;
+        return prevSavedHealth;
       }
     });
   };
