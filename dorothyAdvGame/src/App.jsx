@@ -951,8 +951,8 @@ function App() {
       },
       Text: "You choose to fight the witch and be done with this. You must win to save Dorothy!",
       choices: [
-        {leftText: null, next: "passRollWitch"},
-        {rightText: null, next: "failRollWitch"},
+        {leftText: null, next: "passRollWickedWitch"},
+        {rightText: null, next: "failRollWickedWitch"},
         {rollText: "The only way to win and save Dorothy is this fight! Roll!"}
       ],
       displayLeftChange: 'none',
@@ -1051,7 +1051,7 @@ function App() {
         {rightText: 'Game Credits', next: "siteCredits"},
         {rollText: null}
       ],
-      displayLeftChange: 'none',
+      displayLeftChange: '',
       displayRightChange: '',
       displayRollChange: 'none'
     },

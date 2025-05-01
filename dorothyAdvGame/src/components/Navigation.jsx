@@ -6,7 +6,7 @@ function Navigation({lives}){
         <>
             <div className='w3-container navBar'>
                 <h1>Saving Dorothy</h1>
-                <p>Lives: {lives}</p>
+                <p className='livesText'>Lives: {lives}</p>
             </div>
         </>
     )

@@ -1,3 +1,24 @@
+/* 
+***************
+Media Queries Breakpoints for Responsive Design
+***************
+*/
+
+/* Mobile */
+@media only screen and (max-width: 600px){
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px){
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1030px){
+    
+}
+
 /* App Styling */
 .choicesContainer{
     display: flex;

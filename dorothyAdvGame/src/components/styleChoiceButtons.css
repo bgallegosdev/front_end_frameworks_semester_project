@@ -1,15 +1,53 @@
-/* Choice Buttons Styling */
-.choiceButtonContainer{
-    width: 50%;
+/* 
+***************
+Media Queries Breakpoints for Responsive Design
+***************
+*/
+
+/* Mobile */
+@media only screen and (max-width: 600px){
+    .resetButton{
+        font-size: 1.3em;
+    }
+
+    .choiceButtons{
+        font-size: 1.4em;
+    }
 }
+
+/* Tablet */
+@media only screen and (min-width: 600px){
+    .resetButton{
+        font-size: 1.8em;
+    }
+
+    .choiceButtons{
+        font-size: 1.9em;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1030px){
+    .resetButton{
+        font-size: 1.6em;
+    }
+
+    .choiceButtons{
+        font-size: 2.5em;
+    }
+
+    /* .choiceButtonContainer{
+    width: 50%;
+    } */
+    
+}
+
+/* Choice Buttons Styling */
 
 .choiceButtons{
     margin: 5%;
-
     background-color: #960000;
     color: #ffffff;
-    font-size: 2.5em;
-
 }
 
 .choiceButtons:hover{
@@ -26,7 +64,6 @@
     margin: 2%;
     background-color: #c4c4c4;
     color: #000000;
-    font-size: 1.4em;
 }
 
 .resetButton:hover{
