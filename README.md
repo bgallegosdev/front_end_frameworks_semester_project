@@ -31,3 +31,12 @@ Chains: Photo by Bruno Scramgnon: https://www.pexels.com/photo/selective-focus-p
 Spear: Photo by Alexander Mass: https://www.pexels.com/photo/halberd-in-grass-20101689/
 Broken Chains: Photo by Claudia Solari: https://www.pexels.com/photo/rusted-chain-hanging-against-a-weathered-wall-13157007/
 Crystal Ball: Photo by Ekaterina Belinskaya: https://www.pexels.com/photo/person-holding-clear-glass-ball-4922077/
+Clouds over Tower: Photo by Ludvig Hedenborg: https://www.pexels.com/photo/clouds-over-tower-13671692/
+Witch with Green Smoke: Photo by Ricardo Lima: https://www.pexels.com/photo/green-smoke-from-pumpkin-over-person-in-witch-costume-18578999/
+Long Nails: Photo by Feyza Yıldırım: https://www.pexels.com/photo/hand-shadow-of-a-person-on-glass-surface-14380503/
+Dagger: Photo by Maria Pop: https://www.pexels.com/photo/dagger-with-a-blade-wrapped-in-red-silk-18821902/
+Fire Circle: Photo by Maris Rhamdani: https://www.pexels.com/photo/person-performing-fire-dance-at-night-1552173/
+Castle Sunset: Photo by Johannes Plenio: https://www.pexels.com/photo/white-and-brown-concrete-building-1119972/
+Orange and Green Smoke: Photo by MART  PRODUCTION: https://www.pexels.com/photo/white-and-orange-smoke-illustration-7577886/
+Holding a Crown: Photo by Mike Bird: https://www.pexels.com/photo/boy-wearing-crown-statue-189528/
+Journal: Photo by Pixabay: https://www.pexels.com/photo/black-text-on-gray-background-261763/

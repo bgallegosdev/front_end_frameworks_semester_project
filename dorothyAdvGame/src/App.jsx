@@ -303,6 +303,38 @@ function App() {
       displayRollChange: 'none'
     },
 
+    passRollWickedWitch: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You have worked so hard for this moment. The journey was long and dangerous. And you manged to best the Wicked Witch of the West!",
+      choices: [
+        {leftText: null},
+        {rightText: "Success!", next: 'sceneTenC'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollWickedWitch: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! You try hard to beat the Wicked Witch. But she is truly the strongest witch. She beats you with her broomstick on fire. You lose a life. Get to zero and you fail!",
+      choices: [
+        {leftText: null},
+        {rightText: "You must try a different route or try fighting the witch again…", next: 'sceneNineB'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
     //Starting Paths
     sceneZero: {
       Img: {
@@ -850,13 +882,189 @@ function App() {
 
     sceneNineA: {
       Img: {
-        src: "/assets/scene_eight_f.jpg",
-        alt: "Broken Chains"
+        src: "/assets/scene_nine_a.jpg",
+        alt: "Clouds over Tower"
       },
       Text: "You arrive at the top of the castle. This is where you hear them all. The flying guards are in the air. The hum of the chants. She is here.",
       choices: [
         {leftText: null},
         {rightText: 'Confront the Wicked Witch.', next: "sceneNineB"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneNineABall: {
+      Img: {
+        src: "/assets/scene_nine_a.jpg",
+        alt: "Clouds over Tower"
+      },
+      Text: "The crystal ball bursts with energy, and you instantly arrive at the top of the castle. This is where you hear them all. The flying guards are in the air. The hum of the soldier chants. She is here.",
+      choices: [
+        {leftText: null},
+        {rightText: 'Confront the Wicked Witch.', next: "sceneNineB"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneNineB: {
+      Img: {
+        src: "/assets/scene_nine_b.jpg",
+        alt: "Witch Holding Pumpkin with Green Smoke"
+      },
+      Text: "You approach the witch and demand her return Dorothy unharmed…The witch cackles with amusement, 'I fear no one pretty. I am the Wicked Witch of the West. Your friend has something I want. And if she does not give it to me, well…you will see.'",
+      choices: [
+        {leftText: 'You decide that the best thing to do is reason with the witch. You don`t want to fight anymore…', next: "sceneNineC"},
+        {rightText: 'You decide to take a chance and fight this witch. The witch must be defeated.', next: "sceneNineD"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneNineC: {
+      Img: {
+        src: "/assets/scene_nine_c.jpg",
+        alt: "Hand with Long Nails in Smoke"
+      },
+      Text: "You plead with the witch and beg her to let Dorothy go. Even falling to your knees. The witch smirks, she seems pleased but still dangerous. Witch: 'You are a smart one, eh? Tell Dorothy to give me the slippers. Or she will die!'",
+      choices: [
+        {leftText: 'Tell Dorothy there is no need for fighting anymore. The only way to stay alive and leave is to give up her slippers.', next: "sceneNineE"},
+        {rightText: 'You spot the only weapon you see, a bucket leaning against the castle stone. You grab it and threaten the witch.', next: "sceneNineF"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneNineD: {
+      Img: {
+        src: "/assets/scene_nine_d.jpg",
+        alt: "Dagger with Red Cloth"
+      },
+      Text: "You choose to fight the witch and be done with this. You must win to save Dorothy!",
+      choices: [
+        {leftText: null, next: "passRollWitch"},
+        {rightText: null, next: "failRollWitch"},
+        {rollText: "The only way to win and save Dorothy is this fight! Roll!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneNineE: {
+      Img: {
+        src: "/assets/scene_zero.jpg",
+        alt: "Ruby Slippers"
+      },
+      Text: "You turn to Dorothy, she is distraught with fear and dried tears on her face. You now plead with Dorothy to save us all and give up the slippers…",
+      choices: [
+        {leftText: null},
+        {rightText: 'Dorothy seems hesitant. She stares into your eyes, she sees her friends fearful and tired…She rips the shoes off her feet and throws them to the witch…', next: "sceneTenA"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneNineF: {
+      Img: {
+        src: "/assets/scene_nine_f.jpg",
+        alt: "Fire in Circles"
+      },
+      Text: "The witch sees the bucket, her eyes turn black… Witch: 'How dare you threaten me! I do not take threats from rats like you!' She lights her broom on fire and begins to approach you. You attempt to fence her back with the bucket and a few droplets of water land on her. She screams in pain as it melts her skin...",
+      choices: [
+        {leftText: 'Pour the bucket on the witch. End the Wicked Witch.', next: "sceneTenB"},
+        {rightText: 'You threaten the witch more, sprinkling more water. But you tell her to leave and never come back.', next: "sceneTenC"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneTenA: {
+      Img: {
+        src: "/assets/scene_zero.jpg",
+        alt: "Ruby Slippers"
+      },
+      Text: "Dorothy gives up her shoes. The Wicked Witch is cackling with pleasure and victory. Witch: 'Fools! No one can best me! Take your little friend, you are useless to me now!' The witch soars off in her broom…you've saved Dorothy…",
+      choices: [
+        {leftText: null},
+        {rightText: 'End Game', next: "endCredits"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneTenB: {
+      Img: {
+        src: "/assets/scene_ten_b.jpg",
+        alt: "Castle Sunset"
+      },
+      Text: "You bested the Wicked Witch of the West! You throw the bucket of water on the witch and she howls in pain. The screech echoes to her army, they disperse in fear. She melts into her robe and vanishes with a pop. You've saved Dorothy!",
+      choices: [
+        {leftText: null},
+        {rightText: 'End Game', next: "endCredits"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneTenC: {
+      Img: {
+        src: "/assets/scene_ten_c.jpg",
+        alt: "Orange and Green Smoke"
+      },
+      Text: "You have the upper hand. You know her weakness. You threaten her one last time to leave Dorothy or suffer her end. The witch snarls with anger but her eyes show more fear…with a bang she bursts into air with her army around her and vanishes into the horizon...You've saved Dorothy!",
+      choices: [
+        {leftText: null},
+        {rightText: 'End Game', next: "endCredits"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    endCredits: {
+      Img: {
+        src: "/assets/end_credits.jpg",
+        alt: "Holding a Crown"
+      },
+      Text: "Congratulations! You've completed the game! You save Dorothy and lived to tell the tale. This game was developed by Ben Gallegos, a Web Development student at Collin College. This game was made using a React Framework and is for educational purposes only.",
+      choices: [
+        {leftText: 'Play Again?', next: "sceneZero"},
+        {rightText: 'Game Credits', next: "siteCredits"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    siteCredits: {
+      Img: {
+        src: "/assets/site_credits.jpg",
+        alt: "Journal with Writing"
+      },
+      Text: "Images were found on the platform Pexels.com and were noted as for Free to Use or Creative Commons purposes. I do not own any of the images in this game. *Game Story Content and Code was created by - Game Owner/Developer: Benjamin Gallegos",
+      choices: [
+        {leftText: null},
+        {rightText: 'Play Again?', next: "sceneZero"},
         {rollText: null}
       ],
       displayLeftChange: 'none',
