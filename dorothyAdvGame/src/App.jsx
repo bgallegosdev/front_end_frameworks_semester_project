@@ -79,6 +79,70 @@ function App() {
       displayRollChange: 'none'
     },
 
+    passRollTrap: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You successfully use your agility to jump off the trap in time. You survive!",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneFourA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollTrap: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! You attempt to step off the plate, but you aren't fast enough! Suddenly theres a loud whack and you launch forward. You lose a life, get to zero you fail.",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneFourA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    passRollWitch: {
+      Img: {
+        src: "/assets/pass_icon.svg",
+        alt: "Green Check mark"
+      },
+      Text: "You rolled a passing check! You've broken free from the witch's curse blasting the witch backwards with your spirit. You survive! You run away.",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path!", next: 'sceneFourA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    failRollWitch: {
+      Img: {
+        src: "/assets/failed_icon.svg",
+        alt: "Red x mark"
+      },
+      Text: "You rolled a failed check! The witch laughs as her curse grows tighter around you. You feel the power toss you and land hard, you lose a life! Get to zero and you fail.",
+      choices: [
+        {leftText: null},
+        {rightText: "Continue on your path...", next: 'sceneFourA'},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
     //Starting Paths
     sceneZero: {
       Img: {
@@ -120,7 +184,7 @@ function App() {
       Text: "Tree: 'You! Shhhhhh...evil lurks on every corner here. If it's the castle you seek, tread carefully...my advice will guide you true.'",
       choices: [
         {leftText: "Left: You choose to listen to the tree.", next: "sceneThreeA"},
-        {rightText: "Right: You ignore the tree, walk past towards the open field", next: "sceneThreeB"},
+        {rightText: "Right: You ignore the tree, walk past towards the open field", next: "sceneThreeC"},
         {rollText: null}
       ],
       displayLeftChange: '',
@@ -135,8 +199,8 @@ function App() {
       },
       Text: "You hear chimes twinkling a tune. It's calm and warm. There's a note on the tree: 'Help is near, ring the chimes for good fortune.'",
       choices: [
-        {leftText: "Left: You have no fear. *Ring the chimes*", next: "sceneThreeC"},
-        {rightText: "Right: Something about this isn't right...move on further into the woods.", next: "sceneThreeD"},
+        {leftText: "Left: You have no fear. *Ring the chimes*", next: "sceneThreeB"},
+        {rightText: "Right: Something about this isn't right...move on further into the woods.", next: "sceneThreeC"},
         {rollText: null}
       ],
       displayLeftChange: '',
@@ -153,7 +217,167 @@ function App() {
       choices: [
         {leftText: null, next: "passRollTree"},
         {rightText: null, next: "failRollTree"},
-        {rollText: "Roll for a save! You must get a 5 to 10 to survive!"}
+        {rollText: "Roll for a save! You must fight to survive!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneThreeB: {
+      Img: {
+        src: "/assets/scene_three_b.jpg",
+        alt: "Witch with Candle"
+      },
+      Text: "When you ring the chimes, a witch comes around the corner. Witch: 'Hello dear. Are you lost? I would gladly cast a spell on you to help you find your way?'",
+      choices: [
+        {leftText: 'Trust the witch. Let her cast her spell.', next: "sceneFourB"},
+        {rightText: 'Run Away from the Witch. You will not trust her', next: "sceneFourC"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneThreeC: {
+      Img: {
+        src: "/assets/scene_three_c.jpg",
+        alt: "Dark Forest Image"
+      },
+      Text: "As you go deeper into the woods, the foliage gets thicker and the ground becomes uneven. Suddenly, you step on something and hear a click…",
+      choices: [
+        {leftText: null, next: "passRollTrap"},
+        {rightText: null, next: "failRollTrap"},
+        {rollText: "You look down and it's a trap! You need to roll to jump and dodge the trap!"}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneFourA: {
+      Img: {
+        src: "/assets/scene_four_a.jpg",
+        alt: "Dark Forest Path"
+      },
+      Text: "There are two roads again. What will you choose?",
+      choices: [
+        {leftText: 'Left Path: You think you see light in the distance.', next: "sceneFiveA"},
+        {rightText: 'Right Path: You hear nothing. It is quiet.', next: "sceneFourD"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneFourB: {
+      Img: {
+        src: "/assets/scene_four_b.jpg",
+        alt: "Sparkle with Butterflies"
+      },
+      Text: "You trust the witch. And… She's pleasant! She casts a luck charm on you and you will now be teleported farther.",
+      choices: [
+        {leftText: null},
+        {rightText: 'You are teleported.', next: "sceneSixA"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneFourC: {
+      Img: {
+        src: "/assets/scene_four_c.jpg",
+        alt: "Evil Witch with Wand"
+      },
+      Text: "You run past the witch but are stopped in your tracks! You feel a dark magic on you... you are turned around and see the witch's eyes turn evil…'YOU WOULD DISTRUST ME?!?'",
+      choices: [
+        {leftText: null, next: "passRollWitch"},
+        {rightText: null, next: "failRollWitch"},
+        {rollText: "Your must roll to save yourself from the Witch's grasp."}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: 'none',
+      displayRollChange: ''
+    },
+
+    sceneFourD: {
+      Img: {
+        src: "/assets/scene_four_d.jpg",
+        alt: "Dark Pine Bush Foliage"
+      },
+      Text: "You go into the silent path, and all of sudden you hear a small 'GRRRRRRR!' come from one of the bushes.",
+      choices: [
+        {leftText: 'You run back and take the other path!', next: "sceneFiveA"},
+        {rightText: 'You open the bushes, you have no fear!', next: "sceneFourE"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneFourE: {
+      Img: {
+        src: "/assets/scene_four_e.jpg",
+        alt: "Yorkie Dog Photo"
+      },
+      Text: "Congratulations! You found a secret! You found… TOTO! Dorothy's dog recognizes you as a friend. He barks and confidently leads you.",
+      choices: [
+        {leftText: null},
+        {rightText: 'Follow Toto!', next: "sceneFiveD"},
+        {rollText: null}
+      ],
+      displayLeftChange: 'none',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneFiveA: {
+      Img: {
+        src: "/assets/scene_five_a.jpg",
+        alt: "Field of Poppy Flowers"
+      },
+      Text: "You soon arrive to an open field of poppy flowers, you see a bridge right across the field.",
+      choices: [
+        {leftText: 'You jump off the path and run through the field  straight towards the bridge.', next: "sceneFiveC"},
+        {rightText: 'You decide to follow the path, around the field.', next: "sceneFiveB"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneFiveB: {
+      Img: {
+        src: "/assets/scene_five_b.jpg",
+        alt: "Bridge to Castle"
+      },
+      Text: "You go around the field, out of fear of the poppys. You are safe. Nothing happens. You find a break in the vast field, and see the bridge over a river that connects to the Castle.",
+      choices: [
+        {leftText: 'You don`t see any guards, you run for it.', next: "sceneSixA"},
+        {rightText: 'You see a tunnel just below the river bank...it looks somewhat hidden and unknown. You take it.', next: "sceneFiveD"},
+        {rollText: null}
+      ],
+      displayLeftChange: '',
+      displayRightChange: '',
+      displayRollChange: 'none'
+    },
+
+    sceneFiveC: {
+      Img: {
+        src: "/assets/scene_five_c.jpg",
+        alt: "Storm Clouds with Lightning"
+      },
+      Text: "You run through the fields and you hear a sudden 'AHHAHAHA, you will not escape my pretties!' the air turns cold, a storm strikes, and you begin to feel sleepy…",
+      choices: [
+        {leftText: null, next: "passRollPoppy"},
+        {rightText: null, next: "failRollPoppy"},
+        {rollText: "You  must roll to save yourself from the Sleep spell!"}
       ],
       displayLeftChange: 'none',
       displayRightChange: 'none',
