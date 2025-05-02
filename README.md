@@ -1,6 +1,9 @@
 # front_end_frameworks_semester_project
 Semester project for Front End Frameworks course at Collin College; Goal is to create a React project using React framework concepts for a text-based game.
 
+Article References:
+Dev Log on React Text-Based Game - Using State and Paths/Scenes: https://medium.com/@dimterion/making-a-react-text-adventure-game-continuation-e863f7e6b1b3
+
 Image Credits Used For Project:
 *All are from Pixels and labeled Free to Use
 Two Roads - Photo by James Wheeler: https://www.pexels.com/photo/photo-of-pathway-surrounded-by-fir-trees-1578750/
