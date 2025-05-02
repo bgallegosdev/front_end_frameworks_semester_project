@@ -3,8 +3,8 @@ Semester project for Front End Frameworks course at Collin College; Goal is to c
 
 Image Credits Used For Project:
 *All are from Pixels and labeled Free to Use
-Scene One: Two Roads - Photo by James Wheeler: https://www.pexels.com/photo/photo-of-pathway-surrounded-by-fir-trees-1578750/
-
+Two Roads - Photo by James Wheeler: https://www.pexels.com/photo/photo-of-pathway-surrounded-by-fir-trees-1578750/
+Talking Tree Face - Image by Hans from Pixabay: https://pixabay.com/users/hans-2/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=167490
 Game Over: Skull - Photo by Mitja Juraja: https://www.pexels.com/photo/close-up-photo-of-skull-970517/
 Witch with Candle: Photo by cottonbro studio: https://www.pexels.com/photo/a-person-covering-the-lighted-candle-he-is-holding-5435272/
 Dark Forest: Photo by Anton Atanasov: https://www.pexels.com/photo/landscape-photo-of-forest-1655901/

@@ -341,7 +341,7 @@ function App() {
         src: "/assets/scene_zero.jpg",
         alt: "Ruby Slipper"
       },
-      Text: "Goal: Dorothy has been stolen by the Wicked Witch of West and needs to be saved by her friends at the witch's castle! You will need to travel through The Haunted Forest and face perilous dangers in order to save their friend in time. Choose your choices wisely!",
+      Text: "Goal: Dorothy has been stolen by the Wicked Witch of West and needs to be saved by you and her friends at the witch's castle! You will need to travel through The Haunted Forest and face perilous dangers in order to save your friend in time. Choose your choices wisely!",
       choices: [
         {leftText: null},
         {rightText: "START GAME", next: "sceneOne"},
@@ -359,7 +359,7 @@ function App() {
       },
       Text: "ATTENTION: DOROTHY IS MISSING. STOLEN BY THE WICKED WITCH. YOUR TASK IS TO FIND HER. CHOOSE YOUR PATH WISELY.",
       choices: [
-        {leftText: "Left: You hear a distint small voice whispering.", next: "sceneTwoA"},
+        {leftText: "Left: You hear a distint voice whispering.", next: "sceneTwoA"},
         {rightText: "Right: You hear soft chimes echoing.", next: "sceneTwoB"},
         {rollText: null}
       ],
@@ -370,7 +370,7 @@ function App() {
 
     sceneTwoA: {
       Img: {
-        src: "/assets/scene_two_a.jpg",
+        src: "/assets/scene_two_a_first.jpg",
         alt: "Cartoon Talking Tree"
       },
       Text: "Tree: 'You! Shhhhhh...evil lurks on every corner here. If it's the castle you seek, tread carefully...my advice will guide you true.'",
