@@ -8,6 +8,7 @@ Media Queries Breakpoints for Responsive Design
 @media only screen and (max-width: 600px){
     .resetButton{
         font-size: 1.3em;
+        margin: 2%;
     }
 
     .choiceButtons{
@@ -19,6 +20,7 @@ Media Queries Breakpoints for Responsive Design
 @media only screen and (min-width: 600px){
     .resetButton{
         font-size: 1.8em;
+        margin: 2%;
     }
 
     .choiceButtons{
@@ -30,6 +32,7 @@ Media Queries Breakpoints for Responsive Design
 @media only screen and (min-width: 1030px){
     .resetButton{
         font-size: 1.6em;
+        margin: 1%;
     }
 
     .choiceButtons{
@@ -43,25 +46,29 @@ Media Queries Breakpoints for Responsive Design
 }
 
 /* Choice Buttons Styling */
+.choiceButtonContainer > .choiceButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .choiceButtons{
     margin: 5%;
-    background-color: #960000;
+    background: linear-gradient(to top, #960000 0%, #ff0000 100%);
     color: #ffffff;
 }
 
 .choiceButtons:hover{
-    background-color: #c10000;
+    background: linear-gradient(to top, #c10000 0%, #bd0000 65%);
     box-shadow: 1px 1px 5px #000000;
 }
 
 .choiceButtons:active{
-    background-color: #e6e600;
+    background: #e6e600;
     color: #000000;
 }
 
 .resetButton{
-    margin: 2%;
     background-color: #c4c4c4;
     color: #000000;
 }

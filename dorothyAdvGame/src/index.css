@@ -1,4 +1,15 @@
+/* Google Fonts */
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 /* index styles */
 body{
-    background-color: #3c3c3c;
+    background-color: #212121;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }

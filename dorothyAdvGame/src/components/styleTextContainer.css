@@ -1,17 +1,42 @@
+/* 
+***************
+Media Queries Breakpoints for Responsive Design
+***************
+*/
+
+/* Mobile */
+@media only screen and (max-width: 600px){
+    .storyText{
+        font-size: 1.25em;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px){
+    .storyText{
+        font-size: 1.7em;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1030px){
+    .storyText{
+        font-size: 1.8em;
+    }
+}
+
 /* Text Container Styles */
 .textContainer{
     display: flex;
     justify-content: center;
-    background-color: #F6D372;
+    background: linear-gradient(to bottom, #f6d372 0%, #cc9900 63%);
     box-shadow: 1px 1px 5px #000000;
 
     margin-left: 10%;
     margin-right: 10%;
-    height: 100px;
 }
 
 .storyText{
     text-align: center;
-    font-size: 1.25em;
     font-weight: bold;
 }

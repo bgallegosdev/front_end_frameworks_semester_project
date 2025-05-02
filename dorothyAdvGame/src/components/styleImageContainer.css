@@ -24,7 +24,7 @@ Media Queries Breakpoints for Responsive Design
 /* Desktop */
 @media only screen and (min-width: 1030px){
     .imgContainer{
-        margin: 2%;
+        margin: 1%;
         height: 300px;
     }
     

@@ -311,7 +311,7 @@ function App() {
       Text: "You have worked so hard for this moment. The journey was long and dangerous. And you manged to best the Wicked Witch of the West!",
       choices: [
         {leftText: null},
-        {rightText: "Success!", next: 'sceneTenC'},
+        {rightText: "Success!", next: 'sceneTenB'},
         {rollText: null}
       ],
       displayLeftChange: 'none',

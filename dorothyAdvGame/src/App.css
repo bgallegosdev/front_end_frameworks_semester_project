@@ -23,5 +23,5 @@ Media Queries Breakpoints for Responsive Design
 .choicesContainer{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
