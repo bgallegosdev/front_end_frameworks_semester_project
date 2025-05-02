@@ -116,7 +116,7 @@ function App() {
         src: "/assets/pass_icon.svg",
         alt: "Green Check mark"
       },
-      Text: "You rolled a passing check! You've broken free from the witch's curse blasting the witch backwards with your spirit. You survive! You run away.",
+      Text: "You rolled a passing check! You've broken free from the witch's curse blasting the witch backwards with your strong spirit. You survive! You run away.",
       choices: [
         {leftText: null},
         {rightText: "Continue on your path!", next: 'sceneFourA'},
@@ -341,7 +341,7 @@ function App() {
         src: "/assets/scene_zero.jpg",
         alt: "Ruby Slipper"
       },
-      Text: "Goal: Dorothy has been stolen by the Wicked Witch of West and needs to be saved by you and her friends at the witch's castle! You will need to travel through The Haunted Forest and face perilous dangers in order to save your friend in time. Choose your choices wisely!",
+      Text: "Goal: Dorothy has been stolen by the Wicked Witch of West and needs to be saved by you at the witch's castle! You will need to travel through The Haunted Forest and face perilous dangers in order to save your friend in time. Choose your choices wisely!",
       choices: [
         {leftText: null},
         {rightText: "START GAME", next: "sceneOne"},
@@ -389,7 +389,7 @@ function App() {
         src: "/assets/scene_two_b.jpg",
         alt: "Cartoon Wind Chimes"
       },
-      Text: "You hear chimes twinkling a tune. It's calm and warm. There's a note on the tree: 'Help is near, ring the chimes for good fortune.'",
+      Text: "You hear chimes resonating a tune. It's calm and warm. There's a note on the tree: 'Help is near, ring the chimes for good fortune.'",
       choices: [
         {leftText: "Left: You have no fear. *Ring the chimes*", next: "sceneThreeB"},
         {rightText: "Right: Something about this isn't right...move on further into the woods.", next: "sceneThreeC"},
@@ -485,7 +485,7 @@ function App() {
         src: "/assets/scene_four_c.jpg",
         alt: "Evil Witch with Wand"
       },
-      Text: "You run past the witch but are stopped in your tracks! You feel a dark magic on you... you are turned around and see the witch's eyes turn evil…'YOU WOULD DISTRUST ME?!?'",
+      Text: "You run past the witch but you suddenly stop in your tracks! You feel a dark magic on you, trapping you... you are turned around and see the witch's eyes turn evil…'YOU DISTRUST ME?!?'",
       choices: [
         {leftText: null, next: "passRollWitch"},
         {rightText: null, next: "failRollWitch"},
@@ -693,7 +693,7 @@ function App() {
         src: "/assets/scene_seven_a.jpg",
         alt: "Dark Castle"
       },
-      Text: "You have made it. Through trial and error, you have arrived at the Wicked Witch`s castle. ",
+      Text: "You have made it. You have arrived at the Wicked Witch`s castle...",
       choices: [
         {leftText: null},
         {rightText: 'Approach the doors.', next: "sceneSevenB"},
@@ -821,7 +821,7 @@ function App() {
         src: "/assets/scene_eight_d.jpg",
         alt: "Chains"
       },
-      Text: "As you open the door on the left, you hear the faint cries of someone. It's a guard?!? The guard is chained up. He says, 'I turned against her. She is truly wicked…Dorothy doesn`t deserve this.'",
+      Text: "As you open the door on the left, you hear faint cries... It's a guard?!? The guard is chained up. He says, 'I turned against that witch. And she put me here to die. She is truly wicked…Dorothy doesn`t deserve this. Help me.'",
       choices: [
         {leftText: 'You decide to save the guard. You unshackle his chains.', next: "sceneEightF"},
         {rightText: 'This guard can`t be trusted. You leave him and go through the other door.', next: "sceneEightE"},
@@ -917,7 +917,7 @@ function App() {
         src: "/assets/scene_nine_b.jpg",
         alt: "Witch Holding Pumpkin with Green Smoke"
       },
-      Text: "You approach the witch and demand her return Dorothy unharmed…The witch cackles with amusement, 'I fear no one pretty. I am the Wicked Witch of the West. Your friend has something I want. And if she does not give it to me, well…you will see.'",
+      Text: "You approach the witch and demand she return Dorothy unharmed…The witch cackles with amusement, 'I fear no one, pretty. I am the Wicked Witch of the West! Your friend has something I want. And if she does not give it to me, well…you will see.'",
       choices: [
         {leftText: 'You decide that the best thing to do is reason with the witch. You don`t want to fight anymore…', next: "sceneNineC"},
         {rightText: 'You decide to take a chance and fight this witch. The witch must be defeated.', next: "sceneNineD"},
@@ -935,7 +935,7 @@ function App() {
       },
       Text: "You plead with the witch and beg her to let Dorothy go. Even falling to your knees. The witch smirks, she seems pleased but still dangerous. Witch: 'You are a smart one, eh? Tell Dorothy to give me the slippers. Or she will die!'",
       choices: [
-        {leftText: 'Tell Dorothy there is no need for fighting anymore. The only way to stay alive and leave is to give up her slippers.', next: "sceneNineE"},
+        {leftText: 'Tell the Witch there is no need for fighting anymore. The only way to stay alive and leave is for Dorothy to give up her slippers. You convince Dorothy.', next: "sceneNineE"},
         {rightText: 'You spot the only weapon you see, a bucket leaning against the castle stone. You grab it and threaten the witch.', next: "sceneNineF"},
         {rollText: null}
       ],
