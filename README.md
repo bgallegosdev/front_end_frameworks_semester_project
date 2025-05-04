@@ -1,6 +1,9 @@
 # front_end_frameworks_semester_project
 Semester project for Front End Frameworks course at Collin College; Goal is to create a React project using React framework concepts for a text-based game.
 
+Figma Design:
+    Figma - https://www.figma.com/design/cooS5g8f0JDkjCZcCLOC9t/Front_End_Frameworks_Semester_Project_Planning_Design?node-id=0-1&t=uQY944lr9D7c9fyU-1
+
 Article References:
     Dev Log on React Text-Based Game - Using State and Paths/Scenes: https://medium.com/@dimterion/making-a-react-text-adventure-game-continuation-e863f7e6b1b3
 
