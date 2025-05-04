@@ -1,6 +1,14 @@
 # front_end_frameworks_semester_project
 Semester project for Front End Frameworks course at Collin College; Goal is to create a React project using React framework concepts for a text-based game.
 
+This game focuses on what I've learned about the React framework through my studies. In this project you'll see how we can use state to manage the "paths" that the user can take. Every branch or choice leads to a new one. The paths are stored in a complex object that is not only used to help manage the next scene from the choices but also other data to pass down to child components using props.
+
+A random aspect of the game is the combat or rolls the player must take to complete special encounters. This was done using JavaScript functions that worked with event handlers to change state like scenes or health.
+
+In collaboration with the other React concepts, useEffect hook is used to help the game check for changes in state such as health reaching zero or when the reset button is clicked the health should be started back at 3 again.
+
+<hr>
+
 Figma Design:
     Figma - https://www.figma.com/design/cooS5g8f0JDkjCZcCLOC9t/Front_End_Frameworks_Semester_Project_Planning_Design?node-id=0-1&t=uQY944lr9D7c9fyU-1
 
